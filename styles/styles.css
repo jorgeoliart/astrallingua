@@ -67,7 +67,9 @@ header {
 
 /* Hero section */
 .hero {
-    /* No specific styles yet */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 h1 {
