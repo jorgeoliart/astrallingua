@@ -1,0 +1,182 @@
+:root {
+    /* Colours */
+    --color-blue: #04002a;
+    --color-dark-purple: #230249;
+    --color-yellow: #fbb037;
+    --color-purple-light: #8206f9;
+    --color-pink: #f200ff;
+    --color-light-blue: #00dbff;
+    --color-text-light: #ffffff;
+    --color-text-dark: #000000;
+
+    /* fonts */
+    --font-family-main: 'Corbel Light', Calibri, sans-serif;
+    --font-family-heading: Bahnschrift, 'Segoe UI', sans-serif;
+
+    /* Spacing */
+    --space-xs: 0.5rem;
+    --space-sm: 1rem;
+    --space-md: 1.5rem;
+    --space-lg: 2rem;
+    --space-xl: 3rem;
+}
+
+/* Reset & basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-family-main);
+    background-image: url('../images/background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: var(-color-text-light);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: space-between;
+}
+
+/* --- Header --- */
+header {
+    display: flex;
+    justify-content:flex-end;
+    margin: var(--space-sm);
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+/* --- Main container -- */
+.container {
+    margin: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+
+/* Hero section */
+.hero {
+    /* No specific styles yet */
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: var(--space-xs);
+    font-family: var(--font-family-heading);
+    font-weight: bold;
+}
+
+.subtitle {
+    font-size: 1rem;
+    margin-bottom: var(--space-md);
+    max-width: 75%;
+    line-height: 1.4;
+    color: var(--color-text-light);
+}
+
+.launch-text {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: var(--space-lg);
+    color: var(--color-yellow);
+}
+
+/* CTA selection */
+.cta {
+    display: flex;
+    flex-direction: column; /* Are we sure about this?? */
+    align-items: center;
+}
+
+.rocket {
+    width: 200px;
+    height: auto;
+    margin-bottom: var(--space-sm);
+}
+
+.cta p {
+    color: var(--color-text-light);
+    margin-bottom: var(--space-xs);
+}
+
+.power-button {
+    background-color: black;
+    border: none;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    padding: var(--space-xs);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease; /* Study this */
+}
+
+.power-button:hover {
+    background-color: blue;
+}
+
+.power-button img {
+    width: 80%;
+    height: auto;
+    display: block;
+}
+
+/* --- Footer ---*/
+.site-footer {
+    text-align: center;
+    margin-bottom: var(--space-sm);
+    padding: var(--space-sm);
+    background-color: var(--color-yellow);
+}
+
+/* --- Media queries --- */
+@media (max-width: 768px) {
+    .logo {
+        width: 40px;
+        height: 40px;
+    }
+    
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .subtitle {
+        font-size: 1rem;
+        max-width: 90%;
+    }
+
+    .launch-text {
+        font-size: 1rem;
+    }
+
+    .rocket {
+        width: 150px;
+    }
+
+    .power-button {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+    .subtitle {
+        font-size: 0.9rem;
+    }
+}
