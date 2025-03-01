@@ -87,6 +87,16 @@ header {
     color: var(--color-yellow);
 }
 
+.logotype {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logotype img {
+    width: 85%;
+}
+
 /* CTA selection */
 .cta {
     display: flex;
