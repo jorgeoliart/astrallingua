@@ -2,7 +2,7 @@
     /* Colours */
     --color-blue: #04002a;
     --color-dark-purple: #230249;
-    --color-yellow: #fbb037;
+    --color-yellow: #f4b037;
     --color-purple-light: #8206f9;
     --color-pink: #f200ff;
     --color-light-blue: #00dbff;
@@ -34,14 +34,14 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    color: var(-color-text-light);
+    color: var(--color-text-light);
     display: flex;
     flex-direction: column;
     min-height: 100vh;
     justify-content: space-between;
 }
 
-/* --- Header --- */
+/* --- Header for mobile --- */
 header {
     display: flex;
     justify-content:flex-end;
@@ -49,18 +49,18 @@ header {
 }
 
 .logo {
-    width: 100px;
-    height: 100px;
+    width: 70px;
+    height: 70px;
     border-radius: 50%;
 }
 
 /* --- Main container -- */
-.container {
+.main-content {
     margin: auto;
     text-align: center;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     flex-grow: 1;
 }
@@ -72,27 +72,18 @@ header {
     align-items: center;
 }
 
-h1 {
-    font-size: 5rem;
-    margin-bottom: var(--space-xs);
-    font-family: var(--font-family-heading);
-    font-weight: bold;
-    color: var(--color-text-light)
-}
-
 .subtitle {
     font-size: 2rem;
     margin-bottom: var(--space-md);
     max-width: 75%;
     line-height: 1.4;
     color: var(--color-text-light);
-    margin-top: var(--space-lg);
+    margin-top: var(--space-sm);
 }
 
 .launch-text {
     font-size: 2.5rem;
     font-weight: bold;
-    margin-bottom: var(--space-lg);
     color: var(--color-yellow);
 }
 
@@ -101,12 +92,11 @@ h1 {
     display: flex;
     flex-direction: row; /* Are we sure about this?? */
     align-items: center;
-    margin-top: var(--space-xl);
     gap: 1.5rem
 }
 
 .rocket {
-    width: 200px;
+    width: 180px;
     height: auto;
     margin-bottom: var(--space-sm);
 }
@@ -156,6 +146,7 @@ h1 {
 }
 
 /* --- Media queries --- */
+/*
 @media (max-width: 768px) {
     .logo {
         width: 40px;
@@ -184,7 +175,9 @@ h1 {
         height: 50px;
     }
 }
+*/
 
+/*
 @media (max-width: 480px) {
     h1 {
         font-size: 3.5rem;
@@ -230,3 +223,4 @@ h1 {
     }
   
 }
+    */
