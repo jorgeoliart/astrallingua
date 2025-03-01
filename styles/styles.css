@@ -225,5 +225,8 @@ h1 {
     .cta p {
         font-size: 1.05rem;
     }
+    .site-footer {
+        font-size: 0.9rem;
+    }
   
 }
