@@ -190,11 +190,11 @@ h1 {
         font-size: 3.5rem;
     }
     .subtitle {
-        font-size: 1.3rem;
+        font-size: 1.25rem;
         max-width: 85%
     }
     .launch-text {
-        font-size: 1.75rem;
+        font-size: 1.65rem;
         margin-top: var(--space-xl);
     }
     .logo {
