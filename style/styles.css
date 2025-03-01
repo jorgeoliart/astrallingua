@@ -73,18 +73,19 @@ header {
 }
 
 .subtitle {
-    font-size: 2rem;
-    margin-bottom: var(--space-md);
+    font-size: 1.2rem;
     max-width: 75%;
-    line-height: 1.4;
+    line-height: 1.3;
+    text-align: center;
     color: var(--color-text-light);
     margin-top: var(--space-sm);
+    margin-bottom: var(--space-md);
 }
 
 .launch-text {
-    font-size: 2.5rem;
     font-weight: bold;
     color: var(--color-yellow);
+    font-size: 1.65rem;
 }
 
 .logotype {
